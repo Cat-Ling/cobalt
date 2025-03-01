@@ -31,12 +31,12 @@ services:
       # - ./cookies.json:/cookies.json
 
   # watchtower updates the cobalt image automatically
-  watchtower:
-    image: ghcr.io/containrrr/watchtower
-    restart: unless-stopped
-    command: --cleanup --scope cobalt --interval 900 --include-restarting
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+#  watchtower:
+ #   image: ghcr.io/containrrr/watchtower
+  #  restart: unless-stopped
+   # command: --cleanup --scope cobalt --interval 900 --include-restarting
+    #volumes:
+     # - /var/run/docker.sock:/var/run/docker.sock
 
 networks:
   nginx:
